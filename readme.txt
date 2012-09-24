@@ -17,18 +17,18 @@ Easily embed HTML5 videos from the Media Library into posts and pages.
 Make your media managers happy with this simple Wordpress plugin from [Cremalab](href="http://cremalab.com/ "Cremalab Makes Awesome Experiences").  No longer will you (or they) need to rely on Vimeo, Youtube or any pricey video hosting service to deliver videos to your audience.  Simply upload the correct HTML5 videos to your Media Library, then embed them into your pages easily using the Wordpress editor.  This plugin is different from other similar plugins because this writes the shortcodes for you!
 
 This small plugin seeks to fulfill these three major needs:
-    1.  Embed videos from the Media Library without relying on a third-party hosting service
-    2.  Embed the videos using HTML5 video tags with a Flash fallback for older browsers
-    3.  Make it easy - no need to write long short codes
+  1.  Embed videos from the Media Library without relying on a third-party hosting service
+  2.  Embed the videos using HTML5 video tags with a Flash fallback for older browsers
+  3.  Make it easy - no need to write long short codes
 
 This plugin is built on the [videojs](http://videojs.com/) javascript library which detects browser capability and provides flash fallback for older browsers and to provide the controls styling.  All current browsers and most mobile browsers already support HTML5 video tags, so they will receive native HTML videos without any third-party plugins.  Browsers that do not support HTML5 videos will be shown a Flash version.
 
 ### How Does it Work?
 
 In three steps, you can be hosting your own videos:
-    1.  Convert your videos to HTML5 formats (we like the [Miro Video Converter](http://www.mirovideoconverter.com/ "Miro Video Converter") for this job).
-    2.  Upload all three formats to your Media Libary in Wordpress
-    3.  Embed the videos using the HTML5 Videos plugin
+  1.  Convert your videos to HTML5 formats (we like the [Miro Video Converter](http://www.mirovideoconverter.com/ "Miro Video Converter") for this job).
+  2.  Upload all three formats to your Media Libary in Wordpress
+  3.  Embed the videos using the HTML5 Videos plugin
 
 Most other plugins make you write your the shortcode to embed the video.  HTML5 Videos makes this easier by allowing you to select the videos from the Media Library, set some options, and then insert the shortcode.
 
@@ -36,7 +36,7 @@ Most other plugins make you write your the shortcode to embed the video.  HTML5
 
 == Installation ==
 
-    1.  Install it from the Plugins menu automatically or download the plugin from here and upload it to the Plugins folder.
+  1.  Install it from the Plugins menu automatically or download the plugin from here and upload it to the Plugins folder.
 	2.  Activate the plugin from the Plugins menu in Wordpress.
 	3.  Upload your HTML5-compatible videos into the Media Library.
 	4.  Embed them into your pages using the HTML5 Videos button in the editor.
