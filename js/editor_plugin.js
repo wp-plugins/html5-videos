@@ -8,7 +8,7 @@
 
 			ed.addCommand('mcehtml5Video', function() {
 				ed.windowManager.open({
-					file : url + '/html5_window.php',
+					file : url + '/../html5_window.php',
 					width : 500 + ed.getLang('html5Video.delta_width', 0),
 					height : 500 + ed.getLang('html5Video.delta_height', 0),
 					inline : 1
@@ -21,7 +21,7 @@
 			ed.addButton('html5Video', {
 				title : 'Embed Video from Media Library',
 				cmd : 'mcehtml5Video',
-				image : url + '/img/html5.png'
+				image : url + '/../img/html5.png'
 			});
 
 			// Add a node change handler, selects the button in the UI when a image is selected
