@@ -1,0 +1,60 @@
+body, p {
+	font-size: 13px;
+}
+input[type="text"] {
+	padding: 3px;
+	font-size: 11px;
+	width: 100px;
+}
+input[type="checkbox"] {
+	-webkit-transform: scale(1.5);
+}
+
+input, select {
+	height: 25px;
+	font-size: 13px !important;
+	color: #666;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+input:focus, select:focus {
+	color: #000;
+}
+
+label {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+input[type="submit"] {
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1;
+	line-height: 2.125em;
+	padding: 0 1.25em;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.15))), red;
+	background-size: 100% 112.5%;
+	background-position: 0 -0.0625em;
+	border: 0.0625em solid rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 0.3125em;
+	-moz-border-radius: 0.3125em;
+	-ms-border-radius: 0.3125em;
+	-o-border-radius: 0.3125em;
+	border-radius: 0.3125em;
+	margin: 3px 3.5px 4px;
+	-webkit-box-shadow: 0 0.0625em 0 0 rgba(255, 255, 255, 0.4) inset, 0 0 0 0.0625em rgba(255, 255, 255, 0.2) inset, 0 0 0 3px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0.0625em 0 0 rgba(255, 255, 255, 0.4) inset, 0 0 0 0.0625em rgba(255, 255, 255, 0.2) inset, 0 0 0 3px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0.0625em 0 0 rgba(255, 255, 255, 0.4) inset, 0 0 0 0.0625em rgba(255, 255, 255, 0.2) inset, 0 0 0 3px rgba(0, 0, 0, 0.15);
+	font-weight: normal;
+	text-decoration: none;
+	background-color: red;
+	color: #F8F8F8;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.15))), #F8F8F8;
+	background-color: #F8F8F8;
+	color: #3E444E;
+}
