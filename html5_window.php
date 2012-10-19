@@ -119,6 +119,10 @@ foreach($images as $img) {
 		</p>
 		
 		<p>
+		<input type="checkbox" tabindex="8" name="video_setup" id="video_setup" checked="checked"/> Setup Video Automatically? (Uncheck if the video is hidden on page load)
+		</p>
+		
+		<p>
 			<input class="button" type="submit" tabindex="9" value="Create Shortcodes" onclick="createShortcodes();">
 		</p>
 	</form>	

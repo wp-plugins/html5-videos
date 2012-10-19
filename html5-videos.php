@@ -74,13 +74,27 @@ add_action('init', 'add_html5Video_button');
 ===    Add Video-JS script and styles to WP Head       ===
 ==========================================================
 */
+function fileExists($url) {
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_NOBODY, true);
+    $result = curl_exec($curl);
+    $ret = false;
+    if ($result !== false) {
+        $statusCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        if ($statusCode == 200) {
+            $ret = true;   
+        }
+    }
+    curl_close($curl);
+    return $ret;
+}
+
 function add_videojs(){
-	echo '<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet"><script src="http://vjs.zencdn.net/c/video.js"></script>';	
+  $css = (fileExists('http://vjs.zencdn.net/c/video-js.css')) ? 'http://vjs.zencdn.net/c/video-js.css' : plugins_url('css/video-js.css', __FILE__);
+  $js = (fileExists('http://vjs.zencdn.net/c/video.js')) ? 'http://vjs.zencdn.net/c/video.js' : plugins_url('js/video-js.js', __FILE__);  
+	echo '<link href="' . $css . '" rel="stylesheet"><script src="' . $js . '"></script>';	
 }
 add_action('wp_head','add_videojs');
-
-
-
 
 
 
@@ -103,7 +117,8 @@ function html5_video_shortcode($atts){
 		'width' => 320,
 		'height' => 240,
 		'preload' => 'true',
-		'autoplay' => 'autoplay'
+		'autoplay' => 'autoplay',
+		'setup' => 'auto'
 	), $atts));
 
 	$id = 'video_'.rand();	
@@ -115,12 +130,17 @@ function html5_video_shortcode($atts){
 	$preload_value = ($preload && $preload=='true') ? 'auto' : 'none';
 	$preload_attribute = 'preload="'.$preload_value.'"';
 	$autoplay_attribute =  ($autoplay == "true") ? ' autoplay' : '';
+	$data_setup = ($setup == 'auto') ? ' data-setup="{}"' : '';
 
-	$videojs = '<video id="' . $id . '" class="video-js vjs-default-skin" width="' . $width .'" height="'. $height .'"  controls ' . $poster_attribute . $preload_attribute . $autoplay_attribute .' data-setup="{}">';	
+	$videojs = '<video id="' . $id . '" class="video-js vjs-default-skin" width="' . $width .'" height="'. $height .'"  controls ' . $poster_attribute . $preload_attribute . $autoplay_attribute . $data_setup . '>';	
 		$videojs .= $mp4_source;
 		$videojs .= $webm_source;
 		$videojs .= $ogg_source;
 	$videojs .= '</video>';
+	
+	if('auto' != $data_setup) {
+  	$videojs .= '<script>var ' . $id . ' = _V_("' . $id . '");</script>';
+	}
 
 	return $videojs;
 

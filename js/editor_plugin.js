@@ -10,7 +10,7 @@
 				ed.windowManager.open({
 					file : url + '/../html5_window.php',
 					width : 500 + ed.getLang('html5Video.delta_width', 0),
-					height : 500 + ed.getLang('html5Video.delta_height', 0),
+					height : 600 + ed.getLang('html5Video.delta_height', 0),
 					inline : 1
 				}, {
 					plugin_url : url // Plugin absolute URL

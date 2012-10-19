@@ -20,18 +20,18 @@ function isNumber(n) {
 
 function createShortcodes() {
 	
-	var str, mp4, ogg, webm, poster, width, height, preload, autoplay;
+	var str, mp4, ogg, webm, poster, width, height, preload, autoplay, setup;
 	
-	var mp4 = document.getElementById('mp4').value;
-	var ogg = document.getElementById('ogg').value;
-	var webm = document.getElementById('webm').value;
-	var poster = document.getElementById('poster').value;
+	mp4 = document.getElementById('mp4').value;
+	ogg = document.getElementById('ogg').value;
+	webm = document.getElementById('webm').value;
+	poster = document.getElementById('poster').value;
 	
-	var width = document.getElementById('video_width').value;
-	var height = document.getElementById('video_height').value;
-	var autoplay = document.getElementById('video_autoplay').checked;
-	var preload = document.getElementById('video_preload').checked;
-	
+	width = document.getElementById('video_width').value;
+	height = document.getElementById('video_height').value;
+	autoplay = document.getElementById('video_autoplay').checked;
+	preload = document.getElementById('video_preload').checked;
+	setup = document.getElementById('video_setup').checked;
 	
 	if (mp4 != 'none') {
 		mp4 = 'mp4="' + mp4 + '"';
@@ -81,10 +81,16 @@ function createShortcodes() {
 		preload = ' preload="false"';
 	}
 	
+	if(setup != '') {
+		setup = ' setup="auto"';
+	} else {
+		setup = ' setup="manual"';
+	}
 	
 	
-	if(mp4 != 'none' || ogg != 'none' || webm != 'none' ) {
-		str = '[video ' + mp4 + ogg + webm + poster + width + height + autoplay + preload + ']';
+	
+	if(mp4 || ogg || webm) {
+		str = '[video ' + mp4 + ogg + webm + poster + width + height + autoplay + preload + setup + ']';
 	} else {
 		tinyMCEPopup.close();
 	}	
