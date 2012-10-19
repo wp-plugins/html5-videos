@@ -4,7 +4,7 @@ Donate link:
 Tags: videos, html5, media library
 Requires at least: 2.0.1
 Tested up to: 3.4.2
-Stable tag: trunk
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,10 +36,10 @@ Most other plugins make you write your the shortcode to embed the video.  HTML5
 
 == Installation ==
 
-  1.  Install it from the Plugins menu automatically or download the plugin from [here](http://wordpress.org/extend/plugins/html5-videos/ "Download HTML5 Videos") and upload it to the Plugins folder.
-	2.  Activate the plugin from the Plugins menu in Wordpress.
-	3.  Upload your HTML5-compatible videos into the Media Library.
-	4.  Embed them into your pages using the HTML5 Videos button in the editor.
+1.  Install it from the Plugins menu automatically or download the plugin from [here](http://wordpress.org/extend/plugins/html5-videos/ "Download HTML5 Videos") and upload it to the Plugins folder.
+2.  Activate the plugin from the Plugins menu in Wordpress.
+3.  Upload your HTML5-compatible videos into the Media Library.
+4.  Embed them into your pages using the HTML5 Videos button in the editor.
 
 
 == Frequently Asked Questions ==
