@@ -36,6 +36,7 @@ Most other plugins make you write your the shortcode to embed the video.  HTML5
 
 == Installation ==
 
+*   This plugin relies on curl to get the javascript and css files from VideoJS.  You'll need to have curl installed on your server.  Instructions can be found [here](http://us2.php.net/manual/en/book.curl.php "Install Curl").
 1.  Install it from the Plugins menu automatically or download the plugin from [here](http://wordpress.org/extend/plugins/html5-videos/ "Download HTML5 Videos") and upload it to the Plugins folder.
 2.  Activate the plugin from the Plugins menu in Wordpress.
 3.  Upload your HTML5-compatible videos into the Media Library.
