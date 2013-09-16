@@ -5,7 +5,7 @@ Plugin URI: http://cremalab.com/html5-video-shortcodes/
 Description: Adds a button to the WYSIWYG editor to embed HTML5 videos from the Media Library
 Version: 1.0.2
 Author: Dustin Hayes
-Author URI: http://cremalab.com
+Author URI: http://dustinhayes.com
 License: GPLv2 or later
 */
 

@@ -14,7 +14,9 @@ Easily embed HTML5 videos from the Media Library into posts and pages.
 
 ### Embed HTML5 Videos from the Media Library
 
-Make your media managers happy with this simple Wordpress plugin from [Cremalab](href="http://cremalab.com/ "Cremalab Makes Awesome Experiences").  No longer will you (or they) need to rely on Vimeo, Youtube or any pricey video hosting service to deliver videos to your audience.  Simply upload the correct HTML5 videos to your Media Library, then embed them into your pages easily using the Wordpress editor.  This plugin is different from other similar plugins because this writes the shortcodes for you!
+NOTE: THIS PLUGIN IS NO LONGER IN ACTIVE DEVELOPMENT.
+
+Make your media managers happy with this simple Wordpress plugin.  No longer will you (or they) need to rely on Vimeo, Youtube or any pricey video hosting service to deliver videos to your audience.  Simply upload the correct HTML5 videos to your Media Library, then embed them into your pages easily using the Wordpress editor.  This plugin is different from other similar plugins because this writes the shortcodes for you!
 
 This small plugin seeks to fulfill these three major needs:
   1.  Embed videos from the Media Library without relying on a third-party hosting service
